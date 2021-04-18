@@ -9,30 +9,33 @@ private:
 	int Pages;
 	std::string Annotation;
 public:
-	virtual void Data() = 0;
-	void SetName(std::string A);
+	virtual void Data() const = 0;
+	void SetName(const std::string &A);
 	void SetYear(int A);
-	void SetNamePublisher(std::string A);
+	void SetNamePublisher(const std::string &A);
 	void SetPages(int A);
-	void SetAnnotation(std::string A);
-	std::string GetName();
-	int GetYear();
-	std::string GetNamePublisher();
-	int GetPages();
-	std::string GetAnnotation();
+	void SetAnnotation(const std::string &A);
+	std::string GetName() const;
+	int GetYear() const;
+	std::string GetNamePublisher() const;
+	int GetPages() const;
+	std::string GetAnnotation() const;
 	PrintEdition();
 
 };
 
 class Journal : public PrintEdition {
-	void Data();
+public:
+	void Data () const;
 };
 
 class Textbook : public PrintEdition {
-	void Data();
+public:
+	void Data() const;
 };
 
 class Book : public PrintEdition{
-	void Data();
+public:
+	void Data() const;
 };
 
