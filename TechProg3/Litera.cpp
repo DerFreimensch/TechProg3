@@ -1,5 +1,6 @@
 #include "Litera.h"
 #include <iostream>
+#include <list>
 
 PrintEdition::PrintEdition(){
 	SetName("None");
@@ -7,6 +8,13 @@ PrintEdition::PrintEdition(){
 	SetNamePublisher("None");
 	SetPages(0);
 	SetAnnotation("None");
+}
+PrintEdition::PrintEdition(const PrintEdition& A) {
+	this->SetName(A.GetName());
+	this->SetYear(A.GetYear());
+	this->SetNamePublisher(A.GetNamePublisher());
+	this->SetPages(A.GetPages());
+	this->SetAnnotation(A.GetAnnotation());
 }
 void PrintEdition::SetName(const std::string &A) {
 	Name.clear();
@@ -69,3 +77,4 @@ void PrintEdition::Data() const {
 		this->GetPages() << '\n' << "Annotation: " << 
 		this->GetAnnotation()  << '\n' << std::endl;
 }
+

@@ -21,7 +21,7 @@ public:
 	int GetPages() const;
 	std::string GetAnnotation() const;
 	PrintEdition();
-
+	PrintEdition(const PrintEdition &A);
 };
 
 class Journal : public PrintEdition {
