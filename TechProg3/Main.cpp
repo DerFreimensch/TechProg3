@@ -85,7 +85,10 @@ void FillJ() {
 		str.clear();
 		std::cout << "Print Number of pages: ";
 		std::cin >> i;
-		J.SetPages(i);
+		if (i >= 0)
+			J.SetPages(i);
+		else
+			J.SetPages(0);
 		std::cout << "Print Annotation: ";
 		std::cin >> str;
 		J.SetAnnotation(str);
@@ -114,7 +117,10 @@ void FillT() {
 		str.clear();
 		std::cout << "Print Number of pages: ";
 		std::cin >> i;
-		T.SetPages(i);
+		if (i >= 0)
+			T.SetPages(i);
+		else
+			T.SetPages(0);
 		std::cout << "Print Annotation: ";
 		std::cin >> str;
 		T.SetAnnotation(str);
@@ -143,7 +149,10 @@ void FillB() {
 		str.clear();
 		std::cout << "Print Number of pages: ";
 		std::cin >> i;
-		B.SetPages(i);
+		if (i >= 0)
+			B.SetPages(i);
+		else
+			B.SetPages(0);
 		std::cout << "Print Annotation: ";
 		std::cin >> str;
 		B.SetAnnotation(str);

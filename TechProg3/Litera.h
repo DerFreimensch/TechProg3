@@ -25,16 +25,34 @@ public:
 };
 
 class Journal : public PrintEdition {
+private:
+	std::string Name;
+	int Year;
+	std::string NamePublisher;
+	int Pages;
+	std::string Annotation;
 public:
 	void Data () const;
 };
 
 class Textbook : public PrintEdition {
+private:
+	std::string Name;
+	int Year;
+	std::string NamePublisher;
+	int Pages;
+	std::string Annotation;
 public:
 	void Data() const;
 };
 
 class Book : public PrintEdition{
+private:
+	std::string Name;
+	int Year;
+	std::string NamePublisher;
+	int Pages;
+	std::string Annotation;
 public:
 	void Data() const;
 };

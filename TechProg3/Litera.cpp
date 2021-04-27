@@ -50,28 +50,28 @@ std::string PrintEdition::GetAnnotation() const{
 	return this->Annotation;
 }
 void Journal::Data() const{
-	std::cout << "Name: " << this->GetName() << '\n' << "Year: " <<
+	std::cout << "Type: " << "Journal" <<"Name: " << this->GetName() << '\n' << "Year: " <<
 		this->GetYear() << '\n' << "Publisher name: " << 
 		this->GetNamePublisher() << '\n' << "Number of pages: " << 
 		this->GetPages() << '\n' << "Annotation: " << 
 		this->GetAnnotation() << '\n' << std::endl;
 }
 void Textbook::Data() const{
-	std::cout << "Name: " << this->GetName() << '\n' << "Year: " << 
+	std::cout << "Type: " << "TextBook" << "Name: " << this->GetName() << '\n' << "Year: " <<
 		this->GetYear() << '\n' << "Publisher name: " << 
 		this->GetNamePublisher() << '\n' << "Number of pages: " << 
 		this->GetPages() << '\n' << "Annotation: " << 
 		this->GetAnnotation() << '\n' << std::endl;
 }
 void Book::Data() const{
-	std::cout << "Name: " << this->GetName() << '\n' << "Year: " << 
+	std::cout << "Type: " << "Book" << "Name: " << this->GetName() << '\n' << "Year: " <<
 		this->GetYear() << '\n' << "Publisher name: " << 
 		this->GetNamePublisher() << '\n' << "Number of pages: " << 
 		this->GetPages() << '\n' << "Annotation: " << 
 		this->GetAnnotation() << '\n' << std::endl;
 }
 void PrintEdition::Data() const {
-	std::cout << "Name: " << this->GetName() << '\n' << "Year: " << 
+	std::cout << "Type: " << "PrintEdition" << "Name: " << this->GetName() << '\n' << "Year: " <<
 		this->GetYear() << '\n' << "Publisher name: " << 
 		this->GetNamePublisher() << '\n' << "Number of pages: " << 
 		this->GetPages() << '\n' << "Annotation: " << 
